@@ -1,1 +1,1 @@
-# adminDashboard
+Admin Dashboard project for TOP to showcase advanced CSS and HTML knowledge
