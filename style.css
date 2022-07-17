@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    font-size: 20px;
 }
 
 .wrapper{
@@ -21,8 +22,35 @@ header{
 .top {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "search user";
+    border-bottom: 2px black solid;
 }
+
 .user{
-    display: contents;
+    display: block;
+    grid-area: user;
+}
+
+.user>div{
+    display: inline-block;
+    margin: 30px;
+}
+
+#search {
+    grid-area: search;
+}
+
+#page {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat (3, 1fr);
+}
+
+.article{
+    border: 1px black solid;
+}
+
+footer{
+    position: absolute;
 }
