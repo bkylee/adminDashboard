@@ -1,4 +1,5 @@
 .wrapper {
     display: grid;
     border: 2px black;
+    width: 95%;
 }
