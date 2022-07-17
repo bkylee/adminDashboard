@@ -29,7 +29,12 @@ header{
     grid-template-areas: 
     "search user";
     border-bottom: 2px black solid;
-    height: 10vh;
+    height: vh;
+}
+
+.fp{
+    grid-area: fp;
+    height: 30vh;
 }
 
 .user{
@@ -50,7 +55,8 @@ header{
     display:grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr 1fr 1fr;
-    height: 90vh;
+    grid-auto-rows: 1fr;
+    height: 74vh;
 }
 
 .article{
