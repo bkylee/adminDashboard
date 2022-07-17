@@ -1,3 +1,7 @@
+:root{
+    --header-height: 10vh;
+}
+
 body{
     margin: 0;
     font-size: 20px;
@@ -25,6 +29,7 @@ header{
     grid-template-areas: 
     "search user";
     border-bottom: 2px black solid;
+    height: 10vh;
 }
 
 .user{
@@ -34,7 +39,7 @@ header{
 
 .user>div{
     display: inline-block;
-    margin: 30px;
+    margin: 5px;
 }
 
 #search {
@@ -44,7 +49,8 @@ header{
 #page {
     display:grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat (3, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 90vh;
 }
 
 .article{
