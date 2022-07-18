@@ -52,15 +52,17 @@ header{
 
 #page {
     display:grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 25vh;
+    grid-template-columns: repeat(auto-fit, clamp(300px, 25%, 600px));
+    grid-auto-rows: clamp(170px, 20vh, 336px);
 }
 
 .article{
     border: 1px black solid;
+    display:flex;
+    flex: 1;
 }
 
-footer{
+/* footer{
     grid-column: 1/-1;
     text-align: center;
-}
+} */
