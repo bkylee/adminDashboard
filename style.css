@@ -7,6 +7,12 @@ body{
     font-size: 20px;
 }
 
+.main{
+    display: grid;
+    grid-template-areas: "top"
+    "fp";
+}
+
 .wrapper{
     display: grid;
     grid-template-columns: 1fr 9fr;
@@ -19,6 +25,7 @@ body{
     display: grid;
     background: #7c3aed;
     grid-template-columns: 1fr 3fr;
+    grid-template-rows: repeat(10, auto);
     grid-row: 1/-1;
 }
 
@@ -28,6 +35,7 @@ header{
 
 .top {
     display: grid;
+    grid-area: top;
     grid-template-columns: 3fr 1fr;
     grid-template-areas: 
     "search user";
@@ -35,8 +43,12 @@ header{
 }
 
 .fp{
+    display: flex;
     grid-area: fp;
     height: 40vh;
+    justify-content: center;
+    align-content: center;
+    border-bottom: 2px black solid;
 }
 
 .user{
@@ -52,12 +64,3 @@ header{
 #search {
     grid-area: search;
 }
-
-.article{
-    border: 1px black solid;
-}
-
-/* footer{
-    grid-column: 1/-1;
-    text-align: center;
-} */
