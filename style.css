@@ -1,5 +1,5 @@
 :root{
-    --header-height: 10vh;
+
 }
 
 body{
@@ -10,12 +10,16 @@ body{
 .wrapper{
     display: grid;
     grid-template-columns: 1fr 9fr;
+    grid-template-rows: 30px 40vh;
+    grid-auto-rows: 40vh;
+
 }
 
 .sidebar{
     display: grid;
     background: #7c3aed;
     grid-template-columns: 1fr 3fr;
+    grid-row: 1/-1;
 }
 
 header{
@@ -28,7 +32,6 @@ header{
     grid-template-areas: 
     "search user";
     border-bottom: 2px black solid;
-    height: vh;
 }
 
 .fp{
@@ -50,16 +53,8 @@ header{
     grid-area: search;
 }
 
-#page {
-    display:grid;
-    grid-template-columns: repeat(auto-fit, clamp(300px, 25%, 600px));
-    grid-auto-rows: clamp(170px, 20vh, 336px);
-}
-
 .article{
     border: 1px black solid;
-    display:flex;
-    flex: 1;
 }
 
 /* footer{
