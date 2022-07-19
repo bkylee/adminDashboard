@@ -73,3 +73,12 @@ header{
     border: 1px black solid;
     border-top: none;
 }
+
+.streams>div{
+    display:flex;
+    flex:1;
+    justify-content: center;
+    align-items: center;
+    border: 1px black solid;
+    height: 20vh;
+}
