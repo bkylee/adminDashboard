@@ -72,7 +72,6 @@ header{
 .streams{
     display: grid;
     grid-template-columns: repeat(auto-fill, clamp(300px, 25%, 1020px));
-    grid-auto-rows: clamp(250px, 20vh, 700px);
     border: 1px black solid;
     border-top: none;
 }
