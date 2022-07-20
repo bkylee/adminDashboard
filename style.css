@@ -72,8 +72,13 @@ header{
 .streams{
     display: grid;
     grid-template-columns: repeat(auto-fill, clamp(300px, 25%, 1020px));
+    grid-auto-rows: clamp(250px, 20vh, 700px);
     border: 1px black solid;
     border-top: none;
+}
+
+.streams>a{
+    border: 1px black solid;
 }
 
 .streams>div{
@@ -85,5 +90,14 @@ header{
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
+}
+
+.streams>div>a>img{
+    height: 90%;
+    width: 90%;
+    justify-content: center;
+}
+.streams>div>a{
+    font-size: 0.8rem;
 }
 
