@@ -72,7 +72,7 @@ header{
 .streams{
     display: grid;
     grid-template-columns: repeat(auto-fill, clamp(300px, 25%, 1020px));
-    grid-auto-rows: clamp(250px, 20vh, 700px);
+    grid-auto-rows: clamp(270px, 20vh, 700px);
     border: 1px black solid;
     border-top: none;
 }
@@ -93,8 +93,8 @@ header{
 }
 
 .streams>div>a>img{
-    height: 90%;
-    width: 90%;
+    /* height: 90%; */
+    width: 100%;
     justify-content: center;
 }
 .streams>div>a{
