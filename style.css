@@ -48,15 +48,15 @@ header{
 }
 
 .fp{
-    display: flex;
     grid-area: fp;
     height: 40vh;
-    justify-content: center;
+}
 
+.fp>a>img{
+    width:35%;
 }
 
 .user{
-    display: block;
     grid-area: user;
 }
 
