@@ -1,5 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 :root{
 background-color: blueviolet;
+font-family: 'Roboto', sans-serif;
+}
+
+a{
+    color: white;
+}
+
+a:visited{
+    color: white;
 }
 
 header{
@@ -30,8 +41,12 @@ body{
     grid-template-columns: 1fr 3fr;
 }
 
-#follow>div {
-    
+#follow>a{
+margin: 1em;
+}
+
+#follow>img {
+    width: 100%;
 }
 
 header{
@@ -93,7 +108,6 @@ header{
 }
 
 .streams>div>a>img{
-    /* height: 90%; */
     width: 100%;
     justify-content: center;
 }
